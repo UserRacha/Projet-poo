@@ -1,0 +1,30 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/* Style du fond de l'AnchorPane */
+#sprin {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+}
+
+/* Style des étiquettes */
+Label {
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-text-fill: #333333; /* Couleur du texte */
+}
+
+/* Style des séparateurs */
+Separator {
+    -fx-background-color: #cccccc; /* Couleur de fond */
+}
+
+/* Style des boutons */
+Button {
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-background-color: gray ; /* Couleur de fond */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-border-radius: 5px; /* Bordure arrondie */
+}
+
+/* Style du bouton lorsqu'il est enfoncé */
+Button:pressed {
+    -fx-background-color: #388e3c; /* Changement de couleur de fond */
+}

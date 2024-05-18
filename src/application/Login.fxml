@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlleurLog">
+   <children>
+      <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="336.0" prefWidth="199.0" style="-fx-background-color: DimGray;">
+         <children>
+            <AnchorPane prefHeight="352.0" prefWidth="199.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutY="181.0" prefHeight="28.0" prefWidth="199.0" text="Agence Immobilier " textFill="#262222">
+                     <font>
+                        <Font name="Calisto MT Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon fill="#262222" glyphName="HOME" layoutX="75.0" layoutY="173.0" selectionFill="#3a3333" size="4em" wrappingWidth="49.33333333333326" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="pagechoix" layoutX="199.0" prefHeight="336.0" prefWidth="275.0">
+         <children>
+            <MenuBar layoutX="-3.0" layoutY="1.0" prefHeight="336.0" prefWidth="275.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Gestion ">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Gestionbailleur" text="Gestion bailleur" />
+                        <MenuItem mnemonicParsing="false" onAction="#Gestionlocataire" text="Gestion locataire" />
+                        <MenuItem mnemonicParsing="false" onAction="#gestionacheteur" text="Gestion acheteur" />
+                        <MenuItem mnemonicParsing="false" onAction="#Gestiobvendeur" text="Gestion vendeur" />
+                        <MenuItem mnemonicParsing="false" onAction="#Gestionbien" text="Gestion bien" />
+                        <MenuItem mnemonicParsing="false" onAction="#Gestiontransaction" text="Gestion transaction" />
+                        <MenuItem mnemonicParsing="false" onAction="#Gestionvisite" text="Gestion visite" />
+                        <MenuItem mnemonicParsing="false" onAction="#Gestionagent" text="Gestion agent" />
+                        <MenuItem mnemonicParsing="false" onAction="#Statistique" text="Statistique" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <AnchorPane layoutX="18.0" layoutY="38.0" prefHeight="132.0" prefWidth="225.0">
+               <children>
+                  <ImageView fx:id="image1" fitHeight="136.0" fitWidth="207.0" layoutX="15.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@agence.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="25.0" layoutY="178.0" prefHeight="147.0" prefWidth="232.0">
+               <children>
+                  <ImageView fx:id="image2" fitHeight="150.0" fitWidth="207.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@agence2.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
